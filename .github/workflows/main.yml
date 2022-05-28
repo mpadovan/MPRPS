@@ -52,7 +52,6 @@ jobs:
       with:
         path: './coverage/lcov.info'
         min_coverage: 90
-        exclude: '**/*_observer.dart **/change.dart'
     
   deploy: ## push to heroku
       needs: build

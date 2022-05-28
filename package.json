@@ -4,7 +4,7 @@
   "description": "",
   "main": "out/index.js",
   "scripts": {
-    "test": "tsc && nyc mocha out/tests/index.js --exit && nyc report --reporter=lcovonly",
+    "test": "tsc && nyc --all --reporter=lcovonly --reporter=text  mocha out/tests/index.js --exit",
     "compile": "tsc && node out/index.js",
     "dev": " export PORT=3000 && ./node_modules/nodemon/bin/nodemon.js -e ts  --exec \"npm run compile\"",
     "start": "tsc && node ./out/index"

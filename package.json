@@ -7,7 +7,7 @@
     "test": "tsc && mocha out/tests/index.js --exit",
     "compile": "tsc && node out/index.js",
     "dev": "./node_modules/nodemon/bin/nodemon.js -e ts  --exec \"npm run compile\"", 
-    "start": "tsc && node ./out/index"
+    "start": "node ./out/index"
   },
   "repository": {
     "type": "git",

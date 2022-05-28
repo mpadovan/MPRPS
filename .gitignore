@@ -111,3 +111,7 @@ out/
 
 # VSCode files
 .vscode/
+
+# Tests files
+.nyc_output/
+coverage/

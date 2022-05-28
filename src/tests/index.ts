@@ -1,5 +1,5 @@
 import request from "supertest";
-const app = require('../index.js');
+const app = require('../index');
 
 describe("GET /", () => {
     it("responds with Hello World!", (done) => {
